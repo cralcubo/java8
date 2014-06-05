@@ -33,22 +33,27 @@ public class TradeCalculatorTest {
 	@Test
 	public void testSortTransactions(){
 		int year = 2012;
+		//Lets just print to see the expected results
 		calculator.sortAllTransactionPerYear(year).forEach(System.out::println);
 	}
 	
 	@Test
 	public void testUniqueCities(){
+		//Lets just print to see the expected results
 		calculator.uniqueCitiesFilter().forEach(System.out::println);
 	}
 	
 	@Test
 	public void testFilterByCity(){
 		String city = "Cambridge";
+		
+		//Lets just print to see the expected results
 		calculator.traderCityFilter(city).forEach(System.out::println);
 	}
 	
 	@Test
 	public void getAllTradersTest(){
+		//Lets just print to see the expected results
 		calculator.getTradersNames().forEach(System.out::println);
 	}
 	
@@ -61,11 +66,13 @@ public class TradeCalculatorTest {
 	@Test
 	public void testAllValueTradesPerCity(){
 		String city = "Cambridge";
+		//Lets just print to see the expected results
 		calculator.getTransactionsValuesPerCity(city).forEach(System.out::println);
 	}
 	
 	@Test
 	public void testFindMaxAndMin(){
+		//Lets just print to see the expected results
 		System.out.println("Highest transaction: " + calculator.getHighestTransaction());
 		System.out.println("Lowest transaction: " + calculator.getLowestTransaction());
 		
